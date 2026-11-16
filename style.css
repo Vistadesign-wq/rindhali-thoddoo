@@ -846,3 +846,13 @@ h1,h2,h3,.h2{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 .collage .a img[src$="p13.jpg"]{object-position:92% 50%}
 .slide img[src$="p13.jpg"]{object-position:74% 50%}
 @media (max-width:760px){.slide img[src$="p13.jpg"]{object-position:76% 50%}}
+/* welcome section: guesthouse front shown full size (no crop) */
+.split:has(.collage.full){grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center}
+.collage.full{padding:0 0 22% 0}
+.collage.full .a{aspect-ratio:1280/810}
+.collage.full .a img{object-fit:cover;object-position:50% 50%!important}
+.collage.full .b{left:-22px;right:auto;bottom:0;width:38%;aspect-ratio:4/3}
+.collage.full .badge-score{left:auto;right:-14px;top:-18px}
+[dir=rtl] .collage.full .b{left:auto;right:-22px}
+[dir=rtl] .collage.full .badge-score{right:auto;left:-14px}
+@media (max-width:900px){.split:has(.collage.full){grid-template-columns:1fr}.collage.full{max-width:none}.collage.full .b{left:0}.collage.full .badge-score{right:0}}

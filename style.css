@@ -856,3 +856,5 @@ h1,h2,h3,.h2{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 [dir=rtl] .collage.full .b{left:auto;right:-22px}
 [dir=rtl] .collage.full .badge-score{right:auto;left:-14px}
 @media (max-width:900px){.split:has(.collage.full){grid-template-columns:1fr}.collage.full{max-width:none}.collage.full .b{left:0}.collage.full .badge-score{right:0}}
+.collage.full .b{width:44%;aspect-ratio:1200/900}
+.collage.full .b img{object-position:50% 50%}

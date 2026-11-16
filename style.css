@@ -841,3 +841,8 @@ h1,h2,h3,.h2{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 .clist .soc a{width:40px;height:40px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#E6F4EF;color:#006D77;text-decoration:none}
 .clist .soc a:hover{background:#006D77;color:#fff}
 .clist a{text-decoration:none}
+
+/* keep the RINDHALI THODDOO sign (right side of p13) inside cropped frames */
+.collage .a img[src$="p13.jpg"]{object-position:92% 50%}
+.slide img[src$="p13.jpg"]{object-position:74% 50%}
+@media (max-width:760px){.slide img[src$="p13.jpg"]{object-position:76% 50%}}

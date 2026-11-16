@@ -5,25 +5,27 @@ document.documentElement.classList.add('js');
   var CONTACT = {
     whatsapp: '9607980388',            // country code, no + or spaces
     phone:    '+960 798 0388',         // shown on the page
-    email:    '[reservations@rindhali.com]', // booking requests are sent here
-    instagram:'[HANDLE]',              // e.g. rindhalithoddoo
-    facebook: '[PAGE]'                 // e.g. rindhalithoddoo
+    viber:    '9607980388',            // country code, no + or spaces
+    email:    '[reservations@rindhali.com]', // booking requests are sent here (replace the [ ] placeholder)
+    instagram:'rindhali_thoddoo',      // instagram.com/rindhali_thoddoo
+    facebook: '61582447710947'         // facebook.com/61582447710947 (Rindhali Thoddoo page)
   };
   var real = function(v){ return v.indexOf('[') < 0; };
   var LINKS = {
     whatsapp: 'https://wa.me/' + CONTACT.whatsapp,
-    instagram:'https://instagram.com/' + CONTACT.instagram,
-    facebook: 'https://facebook.com/' + CONTACT.facebook,
+    viber:    'viber://chat?number=%2B' + CONTACT.viber,
+    instagram:'https://www.instagram.com/' + CONTACT.instagram + '/',
+    facebook: 'https://www.facebook.com/' + CONTACT.facebook,
     email:    'mailto:' + CONTACT.email,
     phone:    'tel:' + CONTACT.phone.replace(/[^+\d]/g,'')
   };
   document.querySelectorAll('[data-link]').forEach(function(a){ a.href = LINKS[a.dataset.link]; });
   document.querySelectorAll('[data-text]').forEach(function(el){ el.textContent = CONTACT[el.dataset.text]; });
   /* hide any contact detail that is still a [placeholder] so guests never see it */
-  ['email','instagram','facebook','phone','whatsapp'].forEach(function(k){
+  ['email','instagram','facebook','phone','whatsapp','viber'].forEach(function(k){
     if (real(CONTACT[k])) return;
     document.querySelectorAll('[data-link="' + k + '"],[data-text="' + k + '"]').forEach(function(el){
-      var row = el.closest('.clist li') || el;
+      var row = el.closest('.clist li') || el.closest('.fc-line') || el;
       row.hidden = true; row.style.display = 'none';
     });
   });

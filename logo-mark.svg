@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
+  <title>Rindhali Thoddoo</title>
+  <defs>
+    <linearGradient id="rg-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B3B3C"/><stop offset=".62" stop-color="#006D77"/><stop offset="1" stop-color="#2A9D8F"/></linearGradient>
+    <linearGradient id="rg-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD27A"/><stop offset="1" stop-color="#FF7A59"/></linearGradient>
+    <linearGradient id="rg-sail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4E2"/><stop offset="1" stop-color="#FFD9B8"/></linearGradient>
+    <clipPath id="rg-clip"><path d="M10 58V30a22 22 0 0 1 44 0v28z"/></clipPath>
+  </defs>
+  <path d="M10 58V30a22 22 0 0 1 44 0v28z" fill="url(#rg-sky)"/>
+  <g clip-path="url(#rg-clip)">
+    <circle cx="40" cy="33" r="9" fill="url(#rg-sun)"/>
+    <path d="M10 40h44v18H10z" fill="#0B4F55" opacity=".55"/>
+    <path d="M14 47c3-2 6-2 9 0s6 2 9 0 6-2 9 0 6 2 9 0" fill="none" stroke="#A7F0E6" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
+    <path d="M18 52.5c2.6-1.7 5.2-1.7 7.8 0s5.2 1.7 7.8 0 5.2-1.7 7.8 0" fill="none" stroke="#5EEAD4" stroke-width="1.4" stroke-linecap="round" opacity=".8"/>
+  </g>
+  <g transform="translate(-3 0)">
+  <path d="M30 20.5v19.2" stroke="#FFF4E2" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M30.6 21.5c5.6 3.6 8.8 9.4 9.4 16.2H30.6z" fill="url(#rg-sail)"/>
+  <path d="M29.4 24c-3.6 3-5.6 7.2-6 12.2h6z" fill="#FFF4E2" opacity=".85"/>
+  <path d="M15.5 39.6h27.8c2.6 0 4.6-1.3 6.2-3.6l1.6-2.4c.4-.6 1.2-.4 1.2.3-.2 3.4-1.8 6.4-4.4 8.2-1.6 1.1-3.6 1.7-5.8 1.7H21.5c-2.6 0-4.8-1.6-6-4.2z" fill="#FFF4E2"/>
+  <path d="M51 33.4c.9-1.4 2.4-2 3.4-1.2" fill="none" stroke="#FFF4E2" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M18 41.6h25" stroke="#9BD35A" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+  <path d="M14.5 58V30.5a17.5 17.5 0 0 1 35 0V58" fill="none" stroke="#B8E37A" stroke-width="1.1" opacity=".95"/>
+  <g transform="translate(32 8.6)">
+    <g fill="#FFF4E2" stroke="#FFC24B" stroke-width=".5">
+      <ellipse rx="1.6" ry="3.4" transform="rotate(0) translate(0 -2.6)"/>
+      <ellipse rx="1.6" ry="3.4" transform="rotate(72) translate(0 -2.6)"/>
+      <ellipse rx="1.6" ry="3.4" transform="rotate(144) translate(0 -2.6)"/>
+      <ellipse rx="1.6" ry="3.4" transform="rotate(216) translate(0 -2.6)"/>
+      <ellipse rx="1.6" ry="3.4" transform="rotate(288) translate(0 -2.6)"/>
+    </g>
+    <circle r="1.3" fill="#FFC24B"/>
+  </g>
+</svg>

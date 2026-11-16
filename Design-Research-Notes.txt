@@ -1,0 +1,59 @@
+RINDHALI THODDOO — DESIGN RESEARCH & UPGRADE NOTES
+==================================================
+
+Sources reviewed
+- Hooray L.A.B., "12 Must-Follow Hotel Website Design Trends in 2026"
+- ScaleMyHotel, "Hotel Website Design Best Practices" (updated 2026)
+- Noovy, "How to Create an Effective Hotel Website in 2026"
+- HotelTechReport and Awwwards hotel/resort showcases
+
+Key findings and what was applied
+1. Mobile first (60–70% of hotel traffic is mobile)
+   -> Sticky bottom booking bar on phones ("Check availability" + WhatsApp), within thumb reach,
+      hidden while the menu is open. Floating glass header, large tap targets.
+2. Visible booking widget + direct-booking perks next to it
+   -> Booking bar in the hero, with three concrete perks underneath:
+      no booking-site fees · personal WhatsApp service · transfers & meal plans in one request.
+3. Social proof near rooms
+   -> A real guest quote and score on every room card; 10-review testimonial slider.
+4. Transparency
+   -> Plain-language policy line on each room (cash payment, check-in/out, children, beds).
+5. Accessibility
+   -> Skip-to-content link, visible focus, labelled form fields, pause/play buttons on the
+      hero slideshow and review slider, reduced-motion support, Arabic right-to-left layout.
+6. Local context
+   -> Map plus a walking-times list (restaurants, island centre, beach) on the Contact page.
+7. Speed
+   -> Hero image loads first (fetchpriority), lazy-loaded images elsewhere, no heavy libraries.
+8. Privacy
+   -> Privacy notice page, linked from the form and footer.
+9. Immersive storytelling
+   -> Parallax hero, cinematic photo reveals, scroll-progress line, live Thoddoo weather
+      and Maldives time in the top bar.
+
+Brand
+- Palette "Lagoon & Palm": cream #FFFAF2, deep lagoon #006D77, palm lime #9BD35A,
+  aqua #83C5BE, ink #12302E.
+- Logo: a Maldivian dhoni (traditional curved-prow boat) sailing at sunset inside an island
+  arch, crowned with a frangipani flower. Files: logo.svg (full), logo-mark.svg (symbol),
+  logo-seal.svg (round stamp for social media, menus, signage).
+
+Languages
+- English, Arabic (right-to-left), Russian, German, French, Italian.
+- Fully translated: menu, top bar, footer, mobile bar, the whole Home page, the whole Contact
+  page and enquiry form, and every page's main heading, introduction and call to action.
+- Detailed body text on inner pages (room details, dining, Thoddoo guide, FAQ, privacy) is in
+  English for now. Guest reviews stay in their original wording.
+- To add or correct a translation: edit i18n.js (one line per phrase).
+
+Enquiry form
+- Full country list, separate adults and children, and an age box per child (under 1 to 17).
+- The guesthouse receives the request in English with the guest's language noted (e.g. "Language: RU").
+
+Responsive check
+- All 9 pages tested at 375 px (phone), 768 px (tablet) and 1280 px (desktop) in English,
+  Arabic, Russian and German: no sideways scrolling, menu on one line on desktop.
+
+To add your aerial photo of Thoddoo
+- Save it as  assets/thoddoo-aerial.jpg  — it then appears automatically as the header of the
+  Thoddoo page (until then the sandbank photo is shown).
